@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/problem2.rb"
+
+input = gets.split.map(&:to_i)
+puts sum_array(input)
