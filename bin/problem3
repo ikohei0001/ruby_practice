@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/problem3.rb"
+
+input = gets.split.map(&:to_i)
+puts pick_even_numbers(input)
