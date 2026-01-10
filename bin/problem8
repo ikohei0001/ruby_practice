@@ -1,0 +1,15 @@
+#!usr/bin/env ruby
+
+require_relative "../lib/problem8.rb"
+
+def format_status(status)
+"平均値#{status[:mean]} 標準偏差#{status[:standard_deviation]} 中央値#{status[:median]} 最頻値#{status[:mode]}"
+end
+
+puts "数値をカンマ区切りで入力してください:"
+input = gets.chomp
+
+numbers = input.split(",").map(&:to_f)
+
+status = calculate_status(numbers)
+puts format_status(status)
