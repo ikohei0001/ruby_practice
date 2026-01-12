@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require_relative "../lib/problem6.rb"
+
+puts divisors_using_sqrt(gets.to_i)
