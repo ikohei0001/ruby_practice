@@ -71,6 +71,9 @@ BMI値を引数として受け取り、 日本肥満学会の判定基準に基�
 条件<br>
 ・大文字／小文字は無視して配列するが，同順の場合は小文字を前にする
 
+### 問題10 :  整数とローマ数字を相互に変換する2つのメソッド
+1以上3999以下の整数とローマ数字の間で、相互に変換を行うクラスRomanConverterを実装せよ。<br>
+
 ## 関連記事
 [Qiita記事(1〜5問目)](https://qiita.com/iheuko/items/d56eeca4deafbc3612ef)<br>
 [Qiita記事(6〜10問目)](https://qiita.com/iheuko/items/891c6dcbb9f04cf74f24)
