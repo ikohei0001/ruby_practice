@@ -11,6 +11,23 @@ def divisors_using_sqrt(x)
   result.sort
 end
 
+def divisors(value)
+  result = []
+  i = 1
+  median = Integer.sqrt(value)
+  
+  while i <= median
+    quotient, remainder = value.divmod(i)
+    
+    if remainder == 0
+      result << i
+      result << quotient unless i == quotient
+    end
+    i += 1
+  end
+  result.sort
+end
+
 def divisors_on(x)
   array = []
   # selectなら1行で済む：(1..x).select{ |i| x % i == 0 }
