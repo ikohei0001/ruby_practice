@@ -2,26 +2,13 @@ def custom_sort(words)
   words.sort{ |a, b|
     comparison = a.downcase <=> b.downcase
     if comparison == 0
-      comparison = -(a <=> b)
+      comparison = -(a <=> b)  # b <=> aでもよい
     end
     comparison
   }
 end
 
 def ai_custom_sort(words)
-  words.sort_by do |w|
-    [
-      w.downcase,
-      case
-      when w == w.downcase
-        0  # lowercase
-      when w == w.capitalize
-        1  # capitalized
-      else
-        2  # uppercase / others
-      end,
-      w
-    ]
-  end
+  words.sort_by{ [_1.downcase, _1.swapcase] }
 end
 
