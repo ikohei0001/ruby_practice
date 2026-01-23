@@ -14,13 +14,13 @@ def categorize_by_bmi(bmi)
   case bmi
   when 0...18.5
   "低体重"
-  when 18.5...25
+  when ...25
   "普通体重"
-  when 25...30
+  when ...30
   "肥満(1度)"
-  when 30...35
+  when ...35
   "肥満(2度)"
-  when 35...40
+  when ...40
   "肥満(3度)"
   else
   "肥満(4度)"
@@ -31,5 +31,5 @@ def measure_bmi(height, weight)
   bmi = calculate_bmi(height, weight)
   category = categorize_by_bmi(bmi)
   
-  "あなたのBMIは#{bmi}で、#{category}に分類されます"
+  "あなたのBMIは%.2fで、%sに分類されます" % [bmi, category]
 end
