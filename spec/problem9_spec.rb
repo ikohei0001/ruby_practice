@@ -1,4 +1,4 @@
-require_relative "../lib/problem9"
+require_relative "../lib/problem9.rb"
 
 RSpec.describe "#custom_sort" do
   context "when given an array of words" do
